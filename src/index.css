@@ -1,13 +1,153 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:wght@300&family=The+Nautigal:wght@700&display=swap');
+
+/* font-family: 'Leckerli One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'The Nautigal', cursive; */
+
+/* ======================== BASIC STYLING ============================= */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+
+    --bgcolor: #f1f5fd;
+    --input-background: #f1f1f1;
+    --input-focus-background: #ddd;
+    --primary-color: #6f5de7;
+    --text-color: #828286;
+    --main-text-color: #333333;
+    --btn-color: #04AA6D;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #030307;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    max-width: 40rem;
+}
+
+.img-container {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 7rem;
+    height: 8rem;
+    border-radius: 1rem;
+}
+
+.todo-heading {
+    margin-bottom: 1.7rem;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: rgb(167, 164, 164);
+    text-align: center;
+    font-weight: normal;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.input-container input {
+    width: 35rem;
+    padding: 0.6rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.input-container i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    width: 30px;
+    height: 35px;
+    background-color: indigo;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 3px
+}
+
+.item-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    width: 100%;
+    margin-bottom: 0.9rem;
+    padding: 0.7rem 2rem;
+    background-color: indigo;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.list-container{
+    margin-top: 2.5rem;
+}
+
+.item-list span {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.item-list i{
+    font-size: 1.5rem;
+    background-color: red;
+    cursor: pointer;
+}
+.clear-btn-div{
+    display: flex;
+    justify-content: center;
+}
+.dlt-list{
+    width: 12rem;
+    padding: 0.7rem 0.8rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.dlt-list:hover{
+    color: indigo;
+    background-color: white;
 }
